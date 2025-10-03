@@ -26,7 +26,7 @@ from langchain_core.output_parsers import StrOutputParser
 load_dotenv()
 # 初始化一个LLM用于Agent的思考
 
-llm1 = ChatOllama(model="gpt-oss:120b",temperature=0.3) # 请确保您已经下载了这个模型
+llm1 = ChatOllama(model="gpt-oss:120b",temperature=0.3) 
 llm=ChatGoogleGenerativeAI(temperature=0.3 , model='gemini-2.5-pro',)
 
 # --- 2.  构建RAG知识库并创建工具 ---
